@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+<body>
+ <div class="login-container">
+    <img src="image/logo.png">
+    <h2>Sign In</h2>
+    <form>
+      <input type="text" id="username" name="username" placeholder="Username" required>
+
+      <input type="password" id="password" name="password" placeholder="Password" required>
+
+      <input type="submit" onclick="validate()" value="Sign In">
+    </form>
+
+    <p>Don't have an account? <a href="#">Sign Up</a></p>
+ </div>
+
+<script>
+    function validate() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    if (username === '' || password === '') {
+        alert('Username atau Password salah.');
+    } else {
+        alert('Berhasil login.');
+    }
+}
+</script>
+
+</body>
+</html>
+
