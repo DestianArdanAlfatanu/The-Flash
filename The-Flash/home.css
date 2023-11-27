@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Roboto:wght@100;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(image/background\ 1.png);
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+    filter: none;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+em{
+    font-style: normal;
+    color: rgb(144, 0, 0);
+}
+
+nav{
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+    vertical-align: center;
+    list-style: none;
+    width: 40%;
+}
+
+nav .navbar{
+    margin-left: 30px;
+    gap: 1.2rem;
+    left: 0;
+}
+
+nav .navbar a, p{
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: rgba(106, 4, 15, 1);
+    font-weight: 600;
+    font-size: 16px;
+    font-size: 16px;
+}
+
+nav .navsign{
+    margin: 0;
+    justify-content: flex-end;
+    float: right;
+    gap: 1rem;
+    margin-right: 30px;
+}
+
+nav .navsign a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    font-size: 16px;
+}
+
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+.hero-content{
+    display: flex;
+    margin: auto;
+}
+.hero-section .hero-content .left{
+    display: inline-block;
+    padding: 4px;
+    width: 68%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.hero-section .hero-content .left .opacity-left{
+    position: absolute;
+    top: 0;
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+    padding: 5px;
+    margin: -2px;
+    width: 67%;
+    height: 100vh;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.hero-section .hero-content .right{
+    display: inline-block;
+    width: 32%;
+    padding: 4px;
+    height: 100vh;
+    margin: 0;
+    z-index: -1;
+}
+.hero-section .hero-content .right .opacity-right{
+    position: absolute;
+    top: 0;
+    background-color:rgba(55, 6, 23, 1);
+    opacity: 50%;
+    width: 100%;
+    padding: 6px;
+    margin: -4.5px;
+    width: 31.4%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.hero-section .hero-content .right .item img{
+    margin-left: -300px;
+    margin-top: 56px;
+    height: 700px;
+    width: 583px;
+}
+
+.hero-section .hero-content .left .heading{
+    display: flex;
+    height: 100%;
+    margin-top: -40px;
+    margin-left: -200px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero-section .hero-content .left .heading span{
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(68, 37, 37);
+    display: block;
+    z-index: 1;
+}
+
+.hero-section .hero-content .left .heading h1{
+    display: block;
+    z-index: 1;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 60px;
+    color: rgb(68, 37, 37);
+}
+.hero-section .hero-content .left .heading a{
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 4px 32px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 40px;
+    box-shadow: 1px 2px 4px #4d4d4d;
+    color: #000;
+    z-index: 1;
+    font-family: 'Segoe UI', sans-serif;
+    vertical-align: middle;
+}
+.judul{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 500;
+}
+
+.judul h1{
+    align-items: left;
+    text-align: left;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 300px;
+    margin-left: 80px;
+}
+
+.isi{
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 500;
+    margin-top: -70px;
+    margin-left: 470px;
+    width: 620px;
+    height: 150px;
+}
+
+.isi h3{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
