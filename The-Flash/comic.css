@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ceviche+One&family=Roboto:wght@100;400;600;700;1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(106, 4, 15, 1);
+    background-image: url(image/bg\ the\ flash\ 1.png);
+    background-size: 1536px 755px;
+    min-height: 100vm;
+    filter: none;
+}
+
+nav{
+    display: flex;
+    background-color: transparent;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+}
+
+nav .navbar{
+    margin-left: 5px;
+    gap: 1.2rem;
+}
+
+nav .navbar a, p{
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 500;
+}
+
+nav input{
+    padding-left: 270px;
+    justify-content: flex-end;
+    float: right;
+    gap: 1rem;
+    height: 30px;
+    width: 450px;
+    margin-right: 0px;
+    border-radius: 20px;
+}
+
+nav input [type="text"]{
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 500;
+}
+
+.judul{
+    background-color: rgba(255, 186, 8, 1);
+    margin-top: 30px;
+    height: 50px;
+}
+.judul h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    color: rgba(106, 4, 15, 1);
+    padding:10px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+    margin-top: 123px;
+}
+
+.content .img1 {
+    background-color: rgba(255, 186, 8, 1);
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.content .img1 img{
+    
+}
+
+.content .img2 {
+    background-color: rgba(255, 186, 8, 1);
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.content .img3 {
+    background-color: rgba(255, 186, 8, 1);
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+}
