@@ -103,5 +103,6 @@ nav .navbar a{
 .film p{
     margin-top: 20px;
     font-size: 18px;
+    font-weight: 600;
     color: rgba(106, 4, 15, 1);
 }
