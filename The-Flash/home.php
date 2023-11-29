@@ -1,3 +1,15 @@
+<?php
+    session_start();
+
+    $user = '';
+    $link = 'Login.php';
+    if(isset($_SESSION['id'])){
+        $user = ', ' . strtoupper($_SESSION["username"]);
+        $link = 'movie.php';
+    }
+    include "header.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +20,13 @@
 </head>
 <body>
     <div class="hero-section">
-    <?php
-        include "header.php";
-    ?>
         <div class="hero-content">
             <div class="left">
                 <div class="heading">
                     <div class="item">
-                        <span>WELCOME TO OUR WEBSITE</span>
+                        <span>WELCOME TO OUR WEBSITE <?=$user?></span>
                         <h1>WATCH NEW <br><em>THE FLASH</em><br>ONLINE</h1>
-                        <br><a href="#">Play Now</a>
+                        <br><a href=<?=$link;?>>Play Now</a>
                     </div>
                 </div>
                 <div class="opacity-left"></div>
