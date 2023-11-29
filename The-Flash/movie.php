@@ -1,20 +1,22 @@
+<?php
+    session_start();
+    require_once 'koneksi.php';
+
+    $query = "SELECT * from film";
+    $result = mysqli_query($koneksi, $query);
+
+    include 'header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="movie.css">
+    <link rel="stylesheet" href="css/movie.css">
     <title>Movie</title>
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="">COMICS</a></li>
-            <li><a href="movie.html">MOVIE</a></li>
-            <li><a href="">ABOUT</a></li>
-        </ul>
-    </nav>
     <div class="container">
         <div class="judul">
             <h1><b>THE FLASH</b></h1>
