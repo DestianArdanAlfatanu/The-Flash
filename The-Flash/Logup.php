@@ -30,12 +30,12 @@
 <div class="container">
   <div class="container1">
     <div class="login-container">
-      <form method="POST">
+      <form method="POST" onsubmit="return validateForm()">
       <img src="image/logo.png">
       <h2>Sign Up</h2>
         <input type="text" id="email" name="email"  placeholder="Email" autocomplete="off" required>
   
-        <input type="text" id="username" name="username" placeholder="Username" autocomplete="off" required>
+        <input type="text" id="username" name="username" placeholder="Username" autocomplete="off" required oninput="validateUsernameInput()">
   
         <input type="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
 
@@ -51,9 +51,52 @@
   <div class="container2">
       <img src="image/flashlgn.png">
   </div>
-  
   </div>
- 
+
+  <script>
+    function validateUsernameInput() {
+            var usernameInput = document.getElementById('username');
+            var inputValue = usernameInput.value;
+
+            // Regular expression to check if the input contains only letters
+            var lettersOnlyRegex = /^[a-zA-Z]+$/;
+
+            if (!lettersOnlyRegex.test(inputValue)) {
+                alert("Username hanya boleh berupa huruf");
+                // Remove non-letter characters from the input
+                usernameInput.value = inputValue.replace(/[^a-zA-Z]/g, '');
+            }
+        }
+    function validateEmail() {
+            var emailInput = document.getElementById('email').value;
+  
+      // Regular expression to check if the email has a valid format
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+      if (!emailRegex.test(emailInput)) {
+          alert("Invalid email format");
+          return false; // Prevent form submission
+      }
+
+      // Continue with form submission if the email is valid
+      return true;
+    }
+
+    function validateForm() {
+      var password = document.getElementById('password').value;
+                var confirmPassword = document.getElementById('confirm_password').value;
+
+                if (password !== confirmPassword) {
+                    alert("Password and Confirm Password must match");
+                    return false; // Prevent form submission
+                }
+
+                // You can add additional form validation logic here if needed
+                // Validate both email and username before form submission
+                return validateEmail() && validateUsername();
+                return true;  // Returning true to allow form submission
+    }
+  </script>
 
 </body>
 </html>
