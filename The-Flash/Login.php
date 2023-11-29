@@ -6,15 +6,19 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $result = mysqli_query($koneksi, "SELECT * FROM `user` WHERE username='$username' AND password='$password'");
+        $result = mysqli_query($koneksi, "SELECT * FROM `user` WHERE username='$username';");
         $row = mysqli_fetch_assoc($result);
 
         if(is_array($row) && !empty($row)){
-            $_SESSION['id'] = $row['id_user'];
-            $_SESSION['email'] = $row['email'];
-            $_SESSION['username'] = $row['username'];
-            $_SESSION['password'] = $row['password'];
-            $_SESSION['role'] = $row['role'];
+            if(password_verify($password, $row['password'])){
+                $_SESSION['id'] = $row['id_user'];
+                $_SESSION['email'] = $row['email'];
+                $_SESSION['username'] = $row['username'];
+                $_SESSION['password'] = $row['password'];
+                $_SESSION['role'] = $row['role'];
+            }else{
+                echo "<a href='Login.php' class='alert'><img src='image/logingagal.png' alt='Kembali'></a>";
+            }
         }else{
             echo "<a href='Login.php' class='alert'><img src='image/logingagal.png' alt='Kembali'></a>";
         }

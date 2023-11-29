@@ -4,14 +4,16 @@
     $email = $_POST['email'];
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     $cek_email = mysqli_query($koneksi, "SELECT * FROM `user` WHERE email = '$email'");
     $cek_username = mysqli_query($koneksi, "SELECT * FROM `user` WHERE username = '$username'");
+
     if(mysqli_num_rows($cek_email) != 0 || mysqli_num_rows($cek_username) != 0){
       echo "<a href='Logup.php' class='popup'><img src='image/regisgagal.png' alt='Kembali'></a>";
     } else {
       mysqli_query($koneksi,"INSERT INTO `user`(email, username, password, role) 
-                  VALUES ('$email','$username','$password','member')");
+                  VALUES ('$email','$username','$hashed_password','member')");
       echo "<a href='Login.php' class='popup'><img src='image/regissukses.png' alt='Lanjutkan'></a>";
     }
   }
