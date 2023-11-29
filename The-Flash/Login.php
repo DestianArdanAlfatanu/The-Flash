@@ -45,10 +45,10 @@
 <div class="container">
 <div class="container1">
  <div class="login-container">
-    <form method="POST">
+    <form method="POST" onsubmit="return validateForm()">
     <img src="image/logo.png">
     <h2>Sign In</h2>
-      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="text" id="username" name="username" placeholder="Username" required oninput="validateUsernameInput()">
 
       <input type="password" id="password" name="password" placeholder="Password" required>
 
@@ -61,34 +61,23 @@
 <div class="container2">
     <img src="image/flashlgn.png">
 </div>
-
 </div>
-<!-- <script>
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+<script>
+    function validateUsernameInput() {
+            var usernameInput = document.getElementById('username');
+            var inputValue = usernameInput.value;
 
-// contoh route untuk login
-app.post('/login', (req, res) => {
-    const username = req.body.username;
-    const password = req.body.password;
+            // Regular expression to check if the input contains only letters
+            var lettersOnlyRegex = /^[a-zA-Z]+$/;
 
-    // lakukan validasi login di sini, misalnya cek ke database
-
-    res.status(200).json({
-        success: true,
-        message: 'Login berhasil'
-    });
-});
-
-// start server
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
-</script> -->
+            if (!lettersOnlyRegex.test(inputValue)) {
+                alert("Username hanya boleh berupa huruf");
+                // Remove non-letter characters from the input
+                usernameInput.value = inputValue.replace(/[^a-zA-Z]/g, '');
+            }
+        }
+</script>
+    
 </body>
 </html>
