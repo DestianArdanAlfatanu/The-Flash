@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ceviche+One&family=Roboto:wght@100;400;600;700;800;1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(image/background\ 1.png) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    filter: none;
+    font-family: 'Be Vietnam Pro', 'Inter', sans-serif;
+    position: fixed;
+}
+
+nav{
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    vertical-align: center;
+    list-style: none;
+    width: 40%;
+}
+
+nav .navbar{
+    margin-left: 30px;
+    gap: 1.2rem;
+    left: 0;
+}
+
+nav .navbar a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: rgba(106, 4, 15, 1);
+    font-weight: 600;
+    font-size: 16px;
+    font-size: 16px;
+}
+
+.judul{
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.judul h1{
+    font-family: 'Roboto';
+    font-size: 62px;
+    font-weight: 700;
+    color: rgba(55, 6, 23, 1);
+    text-shadow: 1px 2px 1px grey;
+    height: 78px;
+    width: 596px;
+}
+
+.content{
+    width: 1430px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.content1, .content2, .content3, .content4{
+    background-color: rgba(237, 237, 233, 100);
+    border-radius: 10px;
+    height: 500px;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.content1 a, .content2 a, .content3 a, .content4 a{
+    text-decoration: none;
+}
+
+.content1 img, .content2 img, .content3 img, .content4 img{
+    height: 350px;
+    width: 200px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content1 h5, .content2 h5, .content3 h5, .content4 h5{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 1000;
+    color: rgba(106, 4, 15, 1);
+    text-align: left;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.content1 h6, .content2 h6, .content3 h6, .content4 h6{
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(106, 4, 15, 1);
+    text-align: left;
+    justify-content: center;
+    width: 200px;
+    margin-top: 5px;
+    margin-left: 24px;
+}
