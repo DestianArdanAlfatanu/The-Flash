@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ceviche+One&family=Roboto:wght@100;400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-image: url('../image/background\ 1.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    min-height: 100vh;
+    filter: none;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 1rem;
+    overflow: hidden;
+    color: rgba(106, 4, 15, 1);
+    transition: all 0.5s linear;
+    background: #EDEDE9;
+}
+
+.info{
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    color:rgba(106, 4, 15, 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 27px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.menu{
+    height: 90%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    background-color: rgba(106, 4, 15, 1);
+    height: 30px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: -20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover{
+    background: rgba(106, 4, 15, 1);
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgba(106, 4, 15, 1);
+    font-family: 'Roboto';
+    font-weight: 600;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu li:hover a{
+    color: #fff;
+}
+
+.menu a span{
+    overflow: hidden;
+    color: #EDEDE9;
+    margin-left: 20px;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    margin-left: 25px;
+}
+
+.main h1{
+    font-style: 'Inter';
+    font-weight: 700;
+    font-size: 36px;
+    color: #370617;
+}
+
+.judul{
+    margin-top: 10px;
+    height: 60px;
+    width: 280px;
+}
+
+.judul h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-style: 'Inter';
+    color: #6A040F;
+}
+
+.form{   
+    background-color: #6A040F;
+    height: 300px;
+    width: 1280px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.left{
+    height: 300px;
+    width: 800px;
+    margin-top: 10px;
+}
+
+.left label{
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: 'Inter';
+    color: #EDEDE9;
+}
+
+.left input{
+    height: 26px;
+    width: 350px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.left textarea{    
+    height: 76px;
+    width: 350px;
+    margin-left: 5px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.right{
+    height: 300px;
+    width: 800px;
+    margin-top: 10px;
+}
+
+.right label{
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: 'Inter';
+    color: #EDEDE9;
+}
+
+.right .btn1{
+    height: 26px;
+    width: 350px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.right .btn2{
+    height: 26px;
+    width: 350px;
+    margin-left: 11px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.right button{
+    background-color: #FFC924;
+    height: 36px;
+    width: 95px;
+    margin-top: 80px;
+    margin-left: 510px;
+    border-radius: 10px;
+    
+}
+
+.data h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #6A040F;
+}
+
+/* TABEL */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(106, 4, 15, 1);
+    color: #fff;
+}
