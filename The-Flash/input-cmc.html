@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input-cmc.css">
+    <title>Dashboard-Comic</title>
+</head>
+<body>
+    <div class="sidebar">
+        <span class="info">THE FLASH</span>
+        <ul class="menu">
+            <li>
+                <a href="info-movie.php">
+                    <span>Movie</span>
+                </a>
+            </li>
+            <li>
+                <a href="info-comic.php">
+                    <span>Comic</span>
+                </a>
+            </li>
+            <li>
+                <a href="dash-users.php">
+                    <span>User</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="logout.php">
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <h1>Welcome, Admin 
+        <div class="judul">
+            <h3>Input/Update Movie</h3>            
+        </div>
+            <form action="dash-process.php" method="POST" enctype="multipart/form-data">
+        <div class="form">
+            <div class="left">
+                <input type="hidden" name="id" value="">
+                <input type="hidden" name="from_page" value='movie'>
+                <label for="nama_film">Title</label>
+                <input type="text" name="nama_film" value=""> <br>
+                <label for="sinopsis">Synopsis</label>
+                <textarea name="sinopsis" id="sinopsis" cols="30" rows="10"></textarea> <br>
+                <label for="link">Link</label>
+                <input type="url" name="link" value=""> <br>
+                <label for="poster">Poster</label>
+                <button type="file" class="btn1">Choose File</button>
+            </div>
+            <div class="right">
+                    <button type="submit" name="save" >Save</button>
+            </div>
+        </div>
+            </form>
+        <div class="data">
+            <h2>Data Comic</h2>
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Synopsis</th>
+                    <th>Link</th>
+                    <th>Poster</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href='dash-movies.php?edit=$data[id_film]'>Edit</a> | 
+                            <a href='dash-process.php?delMovie=$data[id_film]'>Delete</a></td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
