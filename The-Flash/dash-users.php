@@ -35,17 +35,17 @@
         <span class="info">THE FLASH</span>
         <ul class="menu">
             <li>
-                <a href="info-movie.php">
+                <a href="dash-movies.php">
                     <span>Movie</span>
                 </a>
             </li>
             <li>
-                <a href="info-comic.php">
+                <a href="dash-comics.php">
                     <span>Comic</span>
                 </a>
             </li>
             <li>
-                <a href="inf">
+                <a href="dash-users.php">
                     <span>User</span>
                 </a>
             </li>
