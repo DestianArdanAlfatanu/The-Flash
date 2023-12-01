@@ -27,7 +27,7 @@
                 <img src="image/thumbnail.png">
             </div>
             <div class="film">
-               <a href="#"><img src="image/SS.png"></a>
+               <a href="https://www.imdb.com/video/vi4130719001/?playlistId=tt3107288&ref_=tt_ov_vi"><img src="image/SS.png"></a>
                 <p>After being struck by lightning, Barry Allen wakes up from his coma 
                     to discover <br> he's been given the power of super speed, becoming the Flash, 
                     and fighting crime <br> in Central City.</p>
