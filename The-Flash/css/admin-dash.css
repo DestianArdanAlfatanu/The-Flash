@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Roboto:wght@100;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-image: url('../image/background\ 1.png');
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+    filter: none;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 1rem;
+    overflow: hidden;
+    color: rgba(106, 4, 15, 1);
+    transition: all 0.5s linear;
+    background: rgba(255, 186, 8, 1);
+}
+
+.info{
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(106, 4, 15, 1);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.menu{
+    height: 90%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover{
+    background: rgba(106, 4, 15, 1);
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgba(106, 4, 15, 1);
+    font-family: 'Roboto';
+    font-weight: 600;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu li:hover a{
+    color: #fff;
+}
+
+.menu a span{
+    overflow: hidden;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+}
+
+.card-container {
+    background: transparent;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2rem;
+}
+
+.card-wrapper {
+    background: rgba(106, 4, 15, 1);
+    max-width: 300px;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* TABEL */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(106, 4, 15, 1);
+    color: #fff;
+}

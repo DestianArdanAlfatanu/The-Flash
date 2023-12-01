@@ -13,7 +13,7 @@ CREATE TABLE `user`(
 CREATE TABLE `film`(
     id_film int(11) NOT NULL PRIMARY KEY,
     nama_film varchar(255) NOT NULL,
-    tahun int(4),
+    info varchar(255),
     sinopsis text,
     poster varchar(255),
     banner varchar(255),

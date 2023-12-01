@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(image/background\ 1.png) ;
+    background-image: url(../image/background\ 1.png) ;
     background-repeat: no-repeat;
     background-size:cover;
     filter: none;

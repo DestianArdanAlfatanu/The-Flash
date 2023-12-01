@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/home.css">
     <title>Home Page</title>
 </head>
-<body>
+<body class="home">
     <div class="hero-section">
         <div class="hero-content">
             <div class="left">

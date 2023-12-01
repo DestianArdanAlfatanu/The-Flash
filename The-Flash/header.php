@@ -2,11 +2,11 @@
     require_once 'koneksi.php';
     function inOrOut(){
         if(isset($_SESSION['id'])){
-            echo "<li><a href='logout.php'>LOG OUT</a></li>";
+            echo "<li><a href='logout.php' class='home-nav'>LOG OUT</a></li>";
         }else{
-            echo "<li><a href='Login.php'>SIGN IN</a></li>
-            <p> | </p>
-            <li><a href='Logup.php'>SIGN UP</a></li>";
+            echo "<li><a href='Login.php' class='home-nav'>SIGN IN</a></li>
+            <p class='home-nav'> | </p>
+            <li><a href='Logup.php' class='home-nav'>SIGN UP</a></li>";
         }
     }
 ?>

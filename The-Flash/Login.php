@@ -25,7 +25,7 @@
 
         if(isset($_SESSION['role'])){
             if($_SESSION['role'] == 'admin'){
-                echo "<a href='users.php' class='popup'><img src='image/loginsukses.png' alt='Lanjutkan'></a>";
+                echo "<a href='dash-movies.php' class='popup'><img src='image/loginsukses.png' alt='Lanjutkan'></a>";
             }else if($_SESSION['role'] == 'member'){
                 echo "<a href='home.php' class='popup'><img src='image/loginsukses.png' alt='Lanjutkan'></a>";
             }else{

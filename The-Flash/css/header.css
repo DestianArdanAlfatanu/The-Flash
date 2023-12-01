@@ -41,6 +41,10 @@ nav .navsign{
 nav .navsign a, p{
     text-decoration: none;
     font-family: 'Roboto';
-    color: #fff;
+    color: rgba(106, 4, 15, 1);
     font-weight: 600;
+}
+
+body.home .home-nav{
+    color: #fff;
 }
