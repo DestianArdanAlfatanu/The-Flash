@@ -66,7 +66,7 @@
             <div class="leftside">
                 <input type="hidden" name="id" value="<?=$id;?>">
                 <input type="hidden" name="from_page" value='movie'>
-                <label for="nama_film">Movie Name</label>
+                <label for="nama_film">Title</label>
                 <input type="text" name="nama_film" value="<?=$nama;?>">
                 <label for="info">Info</label>
                 <input type="text" name="info" value="<?=$info;?>">
@@ -97,11 +97,11 @@
                 <tr>
                     <th>No</th>
                     <th>Id</th>
-                    <th>Name</th>
+                    <th>Title</th>
                     <th>Info</th>
                     <th>Synopsis</th>
                     <th>Poster</th>
-                    <th>Banner</th>
+                    <th>Thumbnail</th>
                     <th>Link</th>
                     <th>Action</th>
                 </tr>

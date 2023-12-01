@@ -37,3 +37,9 @@ ALTER TABLE `film`
 
 ALTER TABLE `comic`
     MODIFY `id_comic` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=200;
+
+-- Input Admin
+-- Username: Barren
+-- Password: barren123
+INSERT INTO `user` (`id_user`, `email`, `username`, `password`, `role`) 
+    VALUES (NULL, 'barryallen@gmail.com', 'Barren', '$2y$10$qK.UBQTGIWwWFJK3IEYL0uYAzqL.j3xMXvAdnsVO0u1FsCXlvGlLm', 'admin')
