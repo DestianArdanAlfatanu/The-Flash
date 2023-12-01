@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ceviche+One&family=Roboto:wght@100;400;600;700;800;1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(image/background\ 1.png) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    filter: none;
+    font-family: 'Be Vietnam Pro', 'Inter', sans-serif;
+    position: fixed;
+}
+
+nav{
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+    vertical-align: center;
+    list-style: none;
+    width: 40%;
+}
+
+nav .navbar{
+    margin-left: 30px;
+    gap: 1.2rem;
+    left: 0;
+}
+
+nav .navbar a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: rgba(106, 4, 15, 1);
+    font-weight: 600;
+    font-size: 16px;
+    font-size: 16px;
+}
+
+.content{
+    height: 550px;
+    width: 1470px;
+    margin-left: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kiri{
+    background-color: rgba(237, 237, 233, 1);
+    height: 560px;
+    width: 390px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+
+.judul{
+    width: 629px;
+    height: 78px;
+    margin-top: 70px;
+    margin-left:50px;
+}
+
+.judul h1{
+    font-family: 'Inter';
+    font-size: 60px;
+    font-weight: 1000;
+    line-height: 81px;
+    color: rgba(55, 6, 23, 1);
+}
+
+.gambar{
+    width: 370px;
+    height: 230px;
+}
+
+.gambar img{
+    width: 350px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.gambar h6{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 100;
+    color: rgba(55, 6, 23, 1);
+    margin-left: 20px;
+}
+
+.ket{
+    margin-left: 60px;
+    height: 100px;
+    width: 290px;
+}
+
+.ket h4{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(55, 6, 23, 1);
+    margin-top: 30px;
+}
+
+.ket h6{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 100;
+    color: rgba(55, 6, 23, 1);
+    gap: 0.3rem;
+}
+
+.kanan{
+    background: rgba(237, 237, 233, 1);
+    height: 560px;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+.par1{
+    width: 930px;
+    font-family: 'Inter';
+    font-weight: 100;
+    font-size: 21.5px;
+    color: rgba(55, 6, 23, 1);
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+.par2, .par3{
+    font-family: 'Inter';
+    width: 930px;
+    font-weight: 100;
+    font-size: 21.5px;
+    color: rgba(55, 6, 23, 1);
+    margin-top: 10px;
+    margin-left: 35px;
+}
